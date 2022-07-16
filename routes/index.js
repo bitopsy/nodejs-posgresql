@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.json({message: 're-alive'});
 });
 
-var Flights = require('Node_Skiplagged_API/index.js');
+var Flights = require('index.js');
 
 var data = {
           FROM: 'PAR',
