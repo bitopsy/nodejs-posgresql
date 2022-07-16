@@ -8,5 +8,5 @@ ENV NODE_ENV=production
 RUN npm ci
 COPY --chown=node:node . ./
 USER node
-CMD ["npm", "start"]
 CMD ["npm", "install", "Node_Skiplagged_API", "-g"]
+CMD ["npm", "start"]
