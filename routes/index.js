@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.json({message: 'alive'});
+  res.json({message: 're-alive'});
 });
 
 var Flights = require('../Node_Skiplagged_API/index.js');
@@ -17,12 +17,12 @@ var data = {
 
 };
 
-var CurrentFlight = new Flights(data);
+#var CurrentFlight = new Flights(data);
 
-CurrentFlight.getFlightData(function(error, body) {
-          body = JSON.stringify(body, undefined, 4);
-          console.log(body);
-});
+#CurrentFlight.getFlightData(function(error, body) {
+#          body = JSON.stringify(body, undefined, 4);
+#          console.log(body);
+#});
 
 
 module.exports = router;
