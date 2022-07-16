@@ -17,12 +17,13 @@ var data = {
 
 };
 
-#var CurrentFlight = new Flights(data);
+/*
+var CurrentFlight = new Flights(data);
 
-#CurrentFlight.getFlightData(function(error, body) {
-#          body = JSON.stringify(body, undefined, 4);
-#          console.log(body);
-#});
-
+CurrentFlight.getFlightData(function(error, body) {
+          body = JSON.stringify(body, undefined, 4);
+          console.log(body);
+});
+*/
 
 module.exports = router;
